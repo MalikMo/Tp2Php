@@ -1,0 +1,742 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: 2015-10-02 15:50-0400\n"
+"Language-Team: EMAIL@ADDRESS\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: \n"
+"X-Generator: Poedit 1.8.5\n"
+"Last-Translator: \n"
+"Language: de_DE\n"
+
+#: Controller/AthletesController.php:37;75;108
+msgid "Invalid athlete"
+msgstr "Ungültige Athlet"
+
+#: Controller/AthletesController.php:53;79
+msgid "The athlete has been saved"
+msgstr "Der Athlet wurde gespeichert"
+
+#: Controller/AthletesController.php:56;82
+msgid "The athlete could not be saved. Please, try again."
+msgstr ""
+"Der Lohn konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+
+#: Controller/AthletesController.php:111
+msgid "Athlete deleted"
+msgstr "Athlet gelöscht"
+
+#: Controller/AthletesController.php:114
+msgid "Athlete was not deleted"
+msgstr "Athlet wurde nicht gelöscht."
+
+#: Controller/AthletesEventsController.php:37;73;105
+msgid "Invalid athletes event"
+msgstr "Ungültige Athleten-Ereignis"
+
+#: Controller/AthletesEventsController.php:52;77
+msgid "The athletes event has been saved"
+msgstr "Das Sportler-Ereignis wurde gespeichert"
+
+#: Controller/AthletesEventsController.php:55;80
+msgid "The athletes event could not be saved. Please, try again."
+msgstr ""
+"Das Sportler-Ereignis konnte nicht gespeichert werden. Bitte versuchen Sie "
+"es erneut."
+
+#: Controller/AthletesEventsController.php:108
+msgid "Athletes event deleted"
+msgstr "Athleten-Ereignis gelöscht"
+
+#: Controller/AthletesEventsController.php:111
+msgid "Athletes event was not deleted"
+msgstr "Athleten-Ereignis wurde nicht gelöscht."
+
+#: Controller/EventsController.php:37;72;103
+msgid "Invalid event"
+msgstr "Ereignis ungültig"
+
+#: Controller/EventsController.php:52;76
+msgid "The event has been saved"
+msgstr "Die Ereignis wurde gespeichert"
+
+#: Controller/EventsController.php:55;79
+msgid "The event could not be saved. Please, try again."
+msgstr ""
+"Der Lohn konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+
+#: Controller/EventsController.php:106
+msgid "Event deleted"
+msgstr "Ereignis gelöscht"
+
+#: Controller/EventsController.php:109
+msgid "Event was not deleted"
+msgstr "Ereignis wurde nicht gelöscht"
+
+#: Controller/ReviewsController.php:37;72;103
+msgid "Invalid review"
+msgstr "Ungültiger Test"
+
+#: Controller/ReviewsController.php:52;76
+msgid "The review has been saved"
+msgstr "Die Bewertung wurde gespeichert"
+
+#: Controller/ReviewsController.php:55;79
+msgid "The review could not be saved. Please, try again."
+msgstr ""
+"Der Lohn konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+
+#: Controller/ReviewsController.php:106
+msgid "Review deleted"
+msgstr "Bewertung gelöscht"
+
+#: Controller/ReviewsController.php:109
+msgid "Review was not deleted"
+msgstr "Bewertung wurde nicht gelöscht."
+
+#: Controller/SportsController.php:37;70;99
+msgid "Invalid sport"
+msgstr "Ungültige sport"
+
+#: Controller/SportsController.php:52;74
+msgid "The sport has been saved"
+msgstr "Der Sport wurde gespeichert"
+
+#: Controller/SportsController.php:55;77
+msgid "The sport could not be saved. Please, try again."
+msgstr ""
+"Der Lohn konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+
+#: Controller/SportsController.php:102
+msgid "Sport deleted"
+msgstr "Sport gelöscht"
+
+#: Controller/SportsController.php:105
+msgid "Sport was not deleted"
+msgstr "Sport wurde nicht gelöscht."
+
+#: Controller/UsersController.php:40;73;102
+msgid "Invalid user"
+msgstr "Ungültiger Benutzer"
+
+#: Controller/UsersController.php:55;77
+msgid "The user has been saved"
+msgstr "Der Benutzer wurde gespeichert"
+
+#: Controller/UsersController.php:58;80
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+"Der Benutzer konnte nicht gespeichert werden. Bitte versuchen Sie es erneut."
+
+#: Controller/UsersController.php:105
+msgid "User deleted"
+msgstr "Benutzer gelöscht"
+
+#: Controller/UsersController.php:108
+msgid "User was not deleted"
+msgstr "Benutzer wurde nicht gelöscht"
+
+#: Controller/UsersController.php:126
+msgid "Invalid username or password, try again"
+msgstr "Benutzername oder Passwort ungültig, versuchen Sie es erneut"
+
+#: Plugin/i18n/Controller/TranslationsController.php:146
+msgid "The translation has been saved"
+msgstr "Die Übersetzung wurde gespeichert"
+
+#: Plugin/i18n/Controller/TranslationsController.php:167;190
+msgid "Translation saved"
+msgstr "Translation gespeichert"
+
+#: Plugin/i18n/Controller/TranslationsController.php:210
+msgid "Translation deleted"
+msgstr "Translation gelöscht"
+
+#: Plugin/i18n/Model/Translation.php:112
+msgid "Could not save the translation, please check your inputs."
+msgstr ""
+"Übersetzung konnte nicht gespeichert werden, überprüfen Sie bitte Ihre "
+"Eingaben."
+
+#: Plugin/i18n/Model/Translation.php:134;171;215;237
+msgid "Invalid Translation"
+msgstr "Ungültige Übersetzung"
+
+#: Plugin/i18n/Model/Translation.php:255
+msgid "You need to confirm to delete this Translation"
+msgstr "Sie müssen bestätigen, diese Übersetzung zu löschen"
+
+#: Plugin/i18n/View/Translations/admin_add.ctp:4
+msgid "Admin Add Translation"
+msgstr "Admin Add Translation"
+
+#: Plugin/i18n/View/Translations/admin_add.ctp:17
+#: Plugin/i18n/View/Translations/admin_edit.ctp:19
+#: Plugin/i18n/View/Translations/admin_edit_multi.ctp:26
+#: Plugin/i18n/View/Translations/admin_view.ctp:40
+msgid "List Translations"
+msgstr "Liste Übersetzungen"
+
+#: Plugin/i18n/View/Translations/admin_delete.ctp:1
+msgid "Delete Translation \"%s\"?"
+msgstr "Translation \"%s\" löschen?"
+
+#: Plugin/i18n/View/Translations/admin_delete.ctp:3
+msgid ""
+"Be aware that your Translation and all associated data will be deleted if "
+"you confirm!"
+msgstr ""
+"Beachten Sie, dass Ihre Übersetzung und alle zugehörigen Daten werden "
+"gelöscht, wenn Sie zu bestätigen!"
+
+#: Plugin/i18n/View/Translations/admin_delete.ctp:11
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#: Plugin/i18n/View/Translations/admin_delete.ctp:13
+msgid "You have to confirm."
+msgstr "Sie haben, um zu bestätigen."
+
+#: Plugin/i18n/View/Translations/admin_delete.ctp:14
+msgid "Continue"
+msgstr "Fortsetzen"
+
+#: Plugin/i18n/View/Translations/admin_edit.ctp:4
+#: Plugin/i18n/View/Translations/admin_edit_multi.ctp:4
+msgid "Admin Edit Translation"
+msgstr "Admin Bearbeiten Übersetzung"
+
+#: Plugin/i18n/View/Translations/admin_edit.ctp:18
+#: Plugin/i18n/View/Translations/admin_index.ctp:70 View/Athletes/edit.ctp:15
+#: View/Athletes/index.ctp:89 View/Athletes/view.ctp:129;173
+#: View/AthletesEvents/edit.ctp:9 View/AthletesEvents/index.ctp:48
+#: View/Events/index.ctp:79 View/Events/view.ctp:118 View/Reviews/edit.ctp:38
+#: View/Reviews/index.ctp:84 View/Sports/edit.ctp:29 View/Sports/index.ctp:76
+#: View/Sports/view.ctp:112 View/Users/edit.ctp:24 View/Users/index.ctp:80
+#: View/Users/view.ctp:126
+msgid "Delete"
+msgstr "Löschen"
+
+#: Plugin/i18n/View/Translations/admin_edit_multi.ctp:22
+msgid "Submit"
+msgstr "Senden"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:2
+msgid "Translations"
+msgstr "Übersetzungen"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:6 View/Athletes/index.ctp:100
+#: View/AthletesEvents/index.ctp:59 View/Events/index.ctp:90
+#: View/Reviews/index.ctp:95 View/Sports/index.ctp:87 View/Users/index.ctp:91
+msgid ""
+"Page {:page} of {:pages}, showing {:current} records out of {:count} total, "
+"starting on record {:start}, ending on {:end}"
+msgstr ""
+"Seite {:seite} von {:seiten}, zeigt {:aktuell} die {:datensätze} insgesamt "
+"ab dem {begin:}, endet bei {: end}"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:17
+msgid "Locale Name"
+msgstr "Locale-Name"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:20
+msgid "Model Name"
+msgstr "Modellbezeichnung"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:23
+#: Plugin/i18n/View/Translations/admin_view.ctp:24
+msgid "Field"
+msgstr "Feld"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:26
+#: Plugin/i18n/View/Translations/admin_view.ctp:29
+msgid "Content"
+msgstr "Inhalt"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:28
+msgid "Search"
+msgstr "Suchen"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:40 View/Athletes/index.ctp:72
+#: View/Athletes/view.ctp:113;159 View/AthletesEvents/index.ctp:33
+#: View/Events/index.ctp:68 View/Events/view.ctp:102 View/Reviews/index.ctp:69
+#: View/Sports/index.ctp:66 View/Sports/view.ctp:96 View/Users/index.ctp:68
+#: View/Users/view.ctp:110
+msgid "Actions"
+msgstr "Aktionen"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:67 View/Athletes/index.ctp:87
+#: View/Athletes/view.ctp:127;171 View/AthletesEvents/index.ctp:46
+#: View/Events/index.ctp:77 View/Events/view.ctp:116 View/Reviews/index.ctp:82
+#: View/Sports/index.ctp:74 View/Sports/view.ctp:110 View/Users/index.ctp:78
+#: View/Users/view.ctp:124
+msgid "View"
+msgstr "Anzeigen"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:68 View/Athletes/index.ctp:88
+#: View/Athletes/view.ctp:128;172 View/AthletesEvents/index.ctp:47
+#: View/Events/index.ctp:78 View/Events/view.ctp:117 View/Reviews/index.ctp:83
+#: View/Sports/index.ctp:75 View/Sports/view.ctp:111 View/Users/index.ctp:79
+#: View/Users/view.ctp:125
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:69
+msgid "Edit All locales for this entry"
+msgstr "Bearbeiten Sie alle Gebietsschemas für diesen Eintrag"
+
+#: Plugin/i18n/View/Translations/admin_index.ctp:80
+#: Plugin/i18n/View/Translations/admin_view.ctp:41
+msgid "New Translation"
+msgstr "Neue Übersetzung"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:2
+msgid "Translation"
+msgstr "Übersetzung"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:4
+#: View/Athletes/view.ctp:66;108;156 View/AthletesEvents/view.ctp:33
+#: View/Events/view.ctp:65;97 View/Reviews/view.ctp:64
+#: View/Sports/view.ctp:64;91 View/Users/view.ctp:67;105
+msgid "Id"
+msgstr "Id"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:9
+msgid "Locale"
+msgstr "Sprache"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:14
+msgid "Model"
+msgstr "Modell"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:19
+msgid "Foreign Key"
+msgstr "Fremdschlüssel"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:38
+msgid "Edit Translation"
+msgstr "Bearbeiten Übersetzung"
+
+#: Plugin/i18n/View/Translations/admin_view.ctp:39
+msgid "Delete Translation"
+msgstr "Übersetzung löschen"
+
+#: View/Athletes/add.ctp:12 View/Athletes/edit.ctp:12
+#: View/Athletes/index.ctp:10 View/Athletes/view.ctp:12 View/Events/add.ctp:12
+#: View/Events/edit.ctp:12 View/Events/index.ctp:12 View/Events/view.ctp:12
+#: View/Reviews/add.ctp:12 View/Reviews/edit.ctp:12 View/Reviews/index.ctp:12
+#: View/Reviews/view.ctp:12 View/Sports/add.ctp:12 View/Sports/edit.ctp:12
+#: View/Sports/index.ctp:12 View/Sports/view.ctp:12 View/Users/add.ctp:12
+#: View/Users/edit.ctp:14 View/Users/index.ctp:11 View/Users/view.ctp:12
+msgid "Athlete Menu"
+msgstr "Sportler-Menü"
+
+#: View/Athletes/add.ctp:14 View/Athletes/edit.ctp:14 View/Athletes/view.ctp:14
+#: View/AthletesEvents/add.ctp:10 View/AthletesEvents/edit.ctp:11
+#: View/AthletesEvents/index.ctp:10 View/AthletesEvents/view.ctp:13
+#: View/Events/add.ctp:14 View/Events/edit.ctp:14 View/Events/index.ctp:14
+#: View/Events/view.ctp:14 View/Reviews/add.ctp:14 View/Reviews/edit.ctp:14
+#: View/Reviews/index.ctp:14 View/Reviews/view.ctp:14 View/Sports/add.ctp:14
+#: View/Sports/edit.ctp:14 View/Sports/index.ctp:14 View/Sports/view.ctp:14
+#: View/Users/add.ctp:14 View/Users/edit.ctp:16 View/Users/index.ctp:13
+#: View/Users/view.ctp:14
+msgid "List Athletes"
+msgstr "Liste-Athleten"
+
+#: View/Athletes/add.ctp:19 View/Athletes/edit.ctp:20
+#: View/Athletes/index.ctp:17 View/Athletes/view.ctp:19 View/Events/add.ctp:19
+#: View/Events/edit.ctp:19 View/Events/index.ctp:19 View/Events/view.ctp:19
+#: View/Reviews/add.ctp:19 View/Reviews/edit.ctp:19 View/Reviews/index.ctp:19
+#: View/Reviews/view.ctp:19 View/Sports/add.ctp:19 View/Sports/edit.ctp:19
+#: View/Sports/index.ctp:19 View/Sports/view.ctp:19 View/Users/add.ctp:19
+#: View/Users/edit.ctp:21 View/Users/index.ctp:18 View/Users/view.ctp:19
+msgid "User Menu"
+msgstr "Benutzer Menü"
+
+#: View/Athletes/add.ctp:21 View/Athletes/edit.ctp:22
+#: View/Athletes/index.ctp:19 View/Athletes/view.ctp:21 View/Events/add.ctp:21
+#: View/Events/edit.ctp:21 View/Events/index.ctp:21 View/Events/view.ctp:21
+#: View/Reviews/add.ctp:21 View/Reviews/edit.ctp:21 View/Reviews/index.ctp:21
+#: View/Reviews/view.ctp:21 View/Sports/add.ctp:21 View/Sports/edit.ctp:21
+#: View/Sports/view.ctp:21 View/Users/add.ctp:21 View/Users/edit.ctp:23
+#: View/Users/view.ctp:21
+msgid "List Users"
+msgstr "Teilnehmer auflisten"
+
+#: View/Athletes/add.ctp:22 View/Athletes/edit.ctp:23
+#: View/Athletes/index.ctp:20 View/Athletes/view.ctp:22 View/Events/add.ctp:22
+#: View/Events/edit.ctp:22 View/Events/index.ctp:22 View/Events/view.ctp:22
+#: View/Reviews/add.ctp:22 View/Reviews/edit.ctp:22 View/Reviews/index.ctp:22
+#: View/Reviews/view.ctp:22 View/Sports/index.ctp:21 View/Users/index.ctp:20
+msgid "New User"
+msgstr "Benutzer hinzufügen"
+
+#: View/Athletes/add.ctp:27 View/Athletes/edit.ctp:28
+#: View/Athletes/index.ctp:25 View/Athletes/view.ctp:27 View/Events/add.ctp:27
+#: View/Events/edit.ctp:27 View/Events/index.ctp:27 View/Events/view.ctp:27
+#: View/Reviews/add.ctp:27 View/Reviews/edit.ctp:27 View/Reviews/index.ctp:27
+#: View/Reviews/view.ctp:27 View/Sports/add.ctp:26 View/Sports/edit.ctp:26
+#: View/Sports/index.ctp:26 View/Sports/view.ctp:26 View/Users/add.ctp:26
+#: View/Users/edit.ctp:29 View/Users/index.ctp:25 View/Users/view.ctp:29
+msgid "Sport Menu"
+msgstr "Sport-Menü"
+
+#: View/Athletes/add.ctp:29 View/Athletes/edit.ctp:30
+#: View/Athletes/index.ctp:27 View/Athletes/view.ctp:29 View/Events/add.ctp:29
+#: View/Events/edit.ctp:29 View/Events/index.ctp:29 View/Events/view.ctp:29
+#: View/Reviews/add.ctp:29 View/Reviews/edit.ctp:29 View/Reviews/index.ctp:29
+#: View/Reviews/view.ctp:29 View/Sports/add.ctp:28 View/Sports/edit.ctp:28
+#: View/Sports/index.ctp:28 View/Sports/view.ctp:28 View/Users/add.ctp:28
+#: View/Users/edit.ctp:31 View/Users/index.ctp:27 View/Users/view.ctp:31
+msgid "List Sports"
+msgstr "Liste Sport"
+
+#: View/Athletes/add.ctp:30 View/Athletes/edit.ctp:31
+#: View/Athletes/index.ctp:28 View/Athletes/view.ctp:30 View/Events/add.ctp:30
+#: View/Events/edit.ctp:30 View/Events/index.ctp:30 View/Events/view.ctp:30
+#: View/Reviews/add.ctp:30 View/Reviews/edit.ctp:30 View/Reviews/index.ctp:30
+#: View/Reviews/view.ctp:30 View/Sports/add.ctp:29 View/Sports/index.ctp:29
+#: View/Sports/view.ctp:29 View/Users/add.ctp:29 View/Users/edit.ctp:32
+#: View/Users/index.ctp:28 View/Users/view.ctp:32
+msgid "New Sport"
+msgstr "Neue Sport"
+
+#: View/Athletes/add.ctp:35 View/Athletes/edit.ctp:36
+#: View/Athletes/index.ctp:33 View/Athletes/view.ctp:35 View/Events/add.ctp:35
+#: View/Events/edit.ctp:35 View/Events/index.ctp:35 View/Events/view.ctp:35
+#: View/Reviews/add.ctp:35 View/Reviews/edit.ctp:35 View/Reviews/index.ctp:35
+#: View/Reviews/view.ctp:35 View/Sports/add.ctp:34 View/Sports/edit.ctp:34
+#: View/Sports/index.ctp:34 View/Sports/view.ctp:34 View/Users/add.ctp:34
+#: View/Users/edit.ctp:37 View/Users/index.ctp:33 View/Users/view.ctp:37
+msgid "Review Menu"
+msgstr "Bearbeitungsmenüs"
+
+#: View/Athletes/add.ctp:37 View/Athletes/edit.ctp:38
+#: View/Athletes/index.ctp:35 View/Athletes/view.ctp:37 View/Events/add.ctp:37
+#: View/Events/edit.ctp:37 View/Events/index.ctp:37 View/Events/view.ctp:37
+#: View/Reviews/add.ctp:37 View/Reviews/edit.ctp:37 View/Reviews/view.ctp:37
+#: View/Sports/add.ctp:36 View/Sports/edit.ctp:36 View/Sports/index.ctp:36
+#: View/Sports/view.ctp:36 View/Users/add.ctp:36 View/Users/edit.ctp:39
+#: View/Users/index.ctp:35 View/Users/view.ctp:39
+msgid "List Reviews"
+msgstr "Liste Bewertungen"
+
+#: View/Athletes/add.ctp:38 View/Athletes/edit.ctp:39
+#: View/Athletes/index.ctp:36 View/Athletes/view.ctp:38;141
+#: View/Events/add.ctp:38 View/Events/edit.ctp:38 View/Events/index.ctp:38
+#: View/Events/view.ctp:38 View/Reviews/index.ctp:37 View/Sports/add.ctp:37
+#: View/Sports/edit.ctp:37 View/Sports/index.ctp:37 View/Sports/view.ctp:37
+#: View/Users/add.ctp:37 View/Users/edit.ctp:40 View/Users/index.ctp:36
+#: View/Users/view.ctp:40
+msgid "New Review"
+msgstr "Neue Bewertung"
+
+#: View/Athletes/add.ctp:43 View/Athletes/edit.ctp:44
+#: View/Athletes/index.ctp:41 View/Athletes/view.ctp:43 View/Events/add.ctp:43
+#: View/Events/edit.ctp:43 View/Events/index.ctp:43 View/Events/view.ctp:43
+#: View/Reviews/add.ctp:42 View/Reviews/edit.ctp:43 View/Reviews/index.ctp:42
+#: View/Reviews/view.ctp:42 View/Sports/add.ctp:42 View/Sports/edit.ctp:42
+#: View/Sports/index.ctp:42 View/Sports/view.ctp:42 View/Users/add.ctp:42
+#: View/Users/edit.ctp:45 View/Users/index.ctp:41 View/Users/view.ctp:45
+msgid "Event Menu"
+msgstr "Ereignis-Menü"
+
+#: View/Athletes/add.ctp:45 View/Athletes/edit.ctp:46
+#: View/Athletes/index.ctp:43 View/Athletes/view.ctp:45
+#: View/AthletesEvents/add.ctp:12 View/AthletesEvents/edit.ctp:13
+#: View/AthletesEvents/index.ctp:12 View/AthletesEvents/view.ctp:15
+#: View/Events/add.ctp:45 View/Events/edit.ctp:45 View/Events/view.ctp:45
+#: View/Reviews/add.ctp:44 View/Reviews/edit.ctp:45 View/Reviews/index.ctp:44
+#: View/Reviews/view.ctp:44 View/Sports/add.ctp:44 View/Sports/edit.ctp:44
+#: View/Sports/index.ctp:44 View/Sports/view.ctp:44 View/Users/add.ctp:44
+#: View/Users/edit.ctp:47 View/Users/index.ctp:43 View/Users/view.ctp:47
+msgid "List Events"
+msgstr "Ereignisse auflisten"
+
+#: View/Athletes/add.ctp:46 View/Athletes/edit.ctp:47
+#: View/Athletes/index.ctp:44 View/Athletes/view.ctp:46;185
+#: View/AthletesEvents/add.ctp:13 View/AthletesEvents/edit.ctp:14
+#: View/AthletesEvents/index.ctp:13 View/AthletesEvents/view.ctp:16
+#: View/Events/index.ctp:45 View/Reviews/add.ctp:45 View/Reviews/edit.ctp:46
+#: View/Reviews/index.ctp:45 View/Reviews/view.ctp:45 View/Sports/add.ctp:45
+#: View/Sports/edit.ctp:45 View/Sports/index.ctp:45 View/Sports/view.ctp:45
+#: View/Users/add.ctp:45 View/Users/edit.ctp:48 View/Users/index.ctp:44
+#: View/Users/view.ctp:48
+msgid "New Event"
+msgstr "Neue Veranstaltung"
+
+#: View/Athletes/add.ctp:58
+msgid "Add Athlete"
+msgstr "Athlet hinzufügen"
+
+#: View/Athletes/edit.ctp:15 View/Athletes/index.ctp:89
+#: View/Athletes/view.ctp:129;173 View/AthletesEvents/edit.ctp:9
+#: View/AthletesEvents/index.ctp:48 View/AthletesEvents/view.ctp:10
+#: View/Events/index.ctp:79 View/Events/view.ctp:118 View/Reviews/edit.ctp:38
+#: View/Reviews/index.ctp:84 View/Sports/edit.ctp:29 View/Sports/index.ctp:76
+#: View/Sports/view.ctp:112 View/Users/edit.ctp:24 View/Users/index.ctp:80
+#: View/Users/view.ctp:22;126
+msgid "Are you sure you want to delete # %s?"
+msgstr "Bist du sicher dass du löschen möchtest # %s?"
+
+#: View/Athletes/edit.ctp:60
+msgid "Edit Athlete"
+msgstr "Bearbeiten der Athlet"
+
+#: View/Athletes/index.ctp:12 View/AthletesEvents/add.ctp:11
+#: View/AthletesEvents/edit.ctp:12 View/AthletesEvents/index.ctp:11
+#: View/AthletesEvents/view.ctp:14 View/Events/add.ctp:15
+#: View/Events/edit.ctp:15 View/Events/index.ctp:15 View/Events/view.ctp:15;130
+#: View/Reviews/add.ctp:15 View/Reviews/edit.ctp:15 View/Reviews/index.ctp:15
+#: View/Reviews/view.ctp:15 View/Sports/add.ctp:15 View/Sports/edit.ctp:15
+#: View/Sports/index.ctp:15 View/Sports/view.ctp:15;124 View/Users/add.ctp:15
+#: View/Users/edit.ctp:17 View/Users/index.ctp:14 View/Users/view.ctp:15;138
+msgid "New Athlete"
+msgstr "Neue Sportler"
+
+#: View/Athletes/index.ctp:62
+msgid "Athletes"
+msgstr "Sportler / Athleten"
+
+#: View/Athletes/index.ctp:107 View/AthletesEvents/index.ctp:66
+#: View/Events/index.ctp:97 View/Reviews/index.ctp:102 View/Sports/index.ctp:94
+#: View/Users/index.ctp:98
+msgid "Previous"
+msgstr "Zurück"
+
+#: View/Athletes/index.ctp:109 View/AthletesEvents/index.ctp:68
+#: View/Events/index.ctp:99 View/Reviews/index.ctp:104 View/Sports/index.ctp:96
+#: View/Users/index.ctp:100
+msgid "Next"
+msgstr "Weiter"
+
+#: View/Athletes/view.ctp:61 View/AthletesEvents/view.ctp:38
+#: View/Reviews/view.ctp:69
+msgid "Athlete"
+msgstr "Sportler"
+
+#: View/Athletes/view.ctp:71;110 View/Events/view.ctp:98
+#: View/Reviews/view.ctp:74 View/Sports/view.ctp:92 View/Users/view.ctp:106
+msgid "Name"
+msgstr "Vorname"
+
+#: View/Athletes/view.ctp:76 View/Events/view.ctp:99 View/Sports/view.ctp:93
+#: View/Users/view.ctp:107
+msgid "Versus"
+msgstr "GEGEN"
+
+#: View/Athletes/view.ctp:81 View/Users/view.ctp:62
+msgid "User"
+msgstr "Teilnehmer"
+
+#: View/Athletes/view.ctp:86 View/Sports/view.ctp:59;69
+msgid "Sport"
+msgstr "Sport"
+
+#: View/Athletes/view.ctp:100
+msgid "Related Reviews"
+msgstr "Ähnliche Bewertungen"
+
+#: View/Athletes/view.ctp:109
+msgid "Athlete Id"
+msgstr "Sportler-Id"
+
+#: View/Athletes/view.ctp:111 View/Reviews/view.ctp:79 View/Users/view.ctp:83
+msgid "Email"
+msgstr "E-Mail"
+
+#: View/Athletes/view.ctp:112 View/Reviews/view.ctp:84
+msgid "Text"
+msgstr "Text"
+
+#: View/Athletes/view.ctp:148
+msgid "Related Events"
+msgstr "Ähnliche Veranstaltungen"
+
+#: View/Athletes/view.ctp:157 View/Events/view.ctp:70
+msgid "Title"
+msgstr "Überschrift"
+
+#: View/Athletes/view.ctp:158 View/Events/view.ctp:75
+msgid "Score"
+msgstr "Punktzahl"
+
+#: View/AthletesEvents/add.ctp:9 View/AthletesEvents/edit.ctp:10
+#: View/AthletesEvents/view.ctp:11
+msgid "List Athletes Events"
+msgstr "List-Athleten-Ereignisse"
+
+#: View/AthletesEvents/add.ctp:22
+msgid "Add Athletes Event"
+msgstr "Athleten-Termin hinzufügen"
+
+#: View/AthletesEvents/edit.ctp:23 View/AthletesEvents/view.ctp:9
+msgid "Edit Athletes Event"
+msgstr "Athleten-Termin bearbeiten"
+
+#: View/AthletesEvents/index.ctp:9 View/AthletesEvents/view.ctp:12
+msgid "New Athletes Event"
+msgstr "Neue Athleten-Event"
+
+#: View/AthletesEvents/index.ctp:24
+msgid "Athletes Events"
+msgstr "Athleten-Veranstaltungen"
+
+#: View/AthletesEvents/view.ctp:10
+msgid "Delete Athletes Event"
+msgstr "Athleten-Ereignis zu löschen"
+
+#: View/AthletesEvents/view.ctp:28
+msgid "Athletes Event"
+msgstr "Athleten-Event"
+
+#: View/AthletesEvents/view.ctp:43 View/Events/view.ctp:60
+msgid "Event"
+msgstr "Ereignis"
+
+#: View/Events/add.ctp:57
+msgid "Add Event"
+msgstr "Veranstaltung hinzufügen"
+
+#: View/Events/edit.ctp:58
+msgid "Edit Event"
+msgstr "Veranstaltung bearbeiten"
+
+#: View/Events/index.ctp:60
+msgid "Events"
+msgstr "Events"
+
+#: View/Events/view.ctp:89 View/Sports/view.ctp:83 View/Users/view.ctp:97
+msgid "Related Athletes"
+msgstr "Verwandte Athleten"
+
+#: View/Events/view.ctp:100 View/Sports/view.ctp:94 View/Users/view.ctp:108
+msgid "User Id"
+msgstr "Benutzer ID"
+
+#: View/Events/view.ctp:101 View/Sports/view.ctp:95 View/Users/view.ctp:109
+msgid "Sport Id"
+msgstr "Sport-Id"
+
+#: View/Reviews/add.ctp:57
+msgid "Add Review"
+msgstr "Bewertung hinzufügen"
+
+#: View/Reviews/edit.ctp:57
+msgid "Edit Review"
+msgstr "Bewertung bearbeiten"
+
+#: View/Reviews/index.ctp:59
+msgid "Reviews"
+msgstr "Kundenmeinungen"
+
+#: View/Reviews/view.ctp:59
+msgid "Review"
+msgstr "Bewerten"
+
+#: View/Sports/add.ctp:58
+msgid "Add Sport"
+msgstr "Hinzufügen von Sport"
+
+#: View/Sports/edit.ctp:58
+msgid "Edit Sport"
+msgstr "Bearbeiten von Sport"
+
+#: View/Sports/index.ctp:59
+msgid "Sports"
+msgstr "Was kann man unternehmen?"
+
+#: View/Themed/Cakestrap/Elements/menu/top_menu.ctp:9
+msgid "Olympic"
+msgstr "Olympic"
+
+#: View/Themed/Cakestrap/Elements/menu/top_menu.ctp:21
+msgid "add user"
+msgstr "limipi hinzufügen"
+
+#: View/Themed/Cakestrap/Elements/menu/top_menu.ctp:25
+msgid "Logout"
+msgstr "Abmelden"
+
+#: View/Themed/Cakestrap/Elements/menu/top_menu.ctp:29 View/Users/login.ctp:13
+msgid "Login"
+msgstr "Anmelden"
+
+#: View/Themed/Cakestrap/Elements/menu/top_menu.ctp:36
+msgid "Language"
+msgstr "Sprache"
+
+#: View/Users/add.ctp:58 View/Users/view.ctp:24
+msgid "Add User"
+msgstr "limipi hinzufügen"
+
+#: View/Users/edit.ctp:58 View/Users/view.ctp:23
+msgid "Edit User"
+msgstr "Benutzerdaten bearbeiten"
+
+#: View/Users/index.ctp:59
+msgid "Users"
+msgstr "Teilnehmer"
+
+#: View/Users/login.ctp:7
+msgid "Please enter your username and password"
+msgstr "Bitte geben Sie Ihren Benutzernamen und Passwort ein"
+
+#: View/Users/view.ctp:22
+msgid "Delete User"
+msgstr "Benutzer löschen"
+
+#: View/Users/view.ctp:23
+msgid "Are you sure you want to edit # %s?"
+msgstr "Sind Sie sicher, dass Sie # %s bearbeiten möchten?"
+
+#: View/Users/view.ctp:24
+msgid "Are you sure you want to add # %s?"
+msgstr "Sind Sie sicher, dass Sie # %s hinzufügen möchten?"
+
+#: View/Users/view.ctp:72
+msgid "Username"
+msgstr "Benutzername"
+
+#: View/Users/view.ctp:78
+msgid "Role"
+msgstr "Rolle"
+
+#: Model/Athlete.php:validation for field name;validation versus
+#: Model/Event.php:validation title Model/Review.php:validation text
+#: Model/Sport.php:validation sport Model/User.php:validation
+#: username;validation password;validation role
+msgid "notBlank"
+msgstr "Feld darf nicht leer sein"
+
+#: Model/Athlete.php:validation for field user_id;validation sport_id
+#: Model/AthletesEvent.php:validation athlete_id;validation event_id
+#: Model/Event.php:validation score Model/Review.php:validation athlete_id
+msgid "numeric"
+msgstr "numerisch"
+
+#: Model/Review.php:validation for field email Model/User.php:validation
+msgid "email"
+msgstr "E-Mail"
+
+#: Plugin/i18n/Model/Translation.php:validation for field locale
+msgid "Please enter a Locale"
+msgstr "Bitte geben Sie eine Locale"
+
+#: Plugin/i18n/Model/Translation.php:validation for field model
+msgid "Please enter a Model"
+msgstr "Bitte geben Sie ein Modell"
+
+#: Plugin/i18n/Model/Translation.php:validation for field foreign_key
+msgid "Please enter a Foreign Key"
+msgstr "Bitte geben Sie eine Fremdschlüssel"
+
+#: Plugin/i18n/Model/Translation.php:validation for field
+msgid "Please enter a Field"
+msgstr "Bitte geben Sie ein Feld"
