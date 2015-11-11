@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.11
+-- version 4.4.15.1
 -- http://www.phpmyadmin.net
 --
--- Client :  127.0.0.1:3306
--- Généré le :  Mar 10 Novembre 2015 à 14:53
--- Version du serveur :  5.5.44
--- Version de PHP :  5.4.43
+-- Host: localhost
+-- Generation Time: Nov 11, 2015 at 08:53 PM
+-- Server version: 5.5.46
+-- PHP Version: 5.4.45
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,16 +17,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `olympic`
+-- Database: `admin_db`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `athletes`
+-- Table structure for table `athletes`
 --
 
-CREATE TABLE `athletes` (
+CREATE TABLE IF NOT EXISTS `athletes` (
   `id` int(11) NOT NULL,
   `name` varchar(35) NOT NULL,
   `versus` varchar(35) NOT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE `athletes` (
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `athletes`
+-- Dumping data for table `athletes`
 --
 
 INSERT INTO `athletes` (`id`, `name`, `versus`, `athlete_image`, `user_id`, `sport_id`, `subcategory_id`) VALUES
@@ -53,17 +53,17 @@ INSERT INTO `athletes` (`id`, `name`, `versus`, `athlete_image`, `user_id`, `spo
 -- --------------------------------------------------------
 
 --
--- Structure de la table `athletes_events`
+-- Table structure for table `athletes_events`
 --
 
-CREATE TABLE `athletes_events` (
+CREATE TABLE IF NOT EXISTS `athletes_events` (
   `id` int(11) NOT NULL,
   `athlete_id` int(11) NOT NULL,
   `event_id` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `athletes_events`
+-- Dumping data for table `athletes_events`
 --
 
 INSERT INTO `athletes_events` (`id`, `athlete_id`, `event_id`) VALUES
@@ -83,16 +83,16 @@ INSERT INTO `athletes_events` (`id`, `athlete_id`, `event_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `categories`
+-- Table structure for table `categories`
 --
 
-CREATE TABLE `categories` (
+CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(10) unsigned NOT NULL,
   `name` varchar(60) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `categories`
+-- Dumping data for table `categories`
 --
 
 INSERT INTO `categories` (`id`, `name`) VALUES
@@ -103,17 +103,17 @@ INSERT INTO `categories` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `events`
+-- Table structure for table `events`
 --
 
-CREATE TABLE `events` (
+CREATE TABLE IF NOT EXISTS `events` (
   `id` int(11) NOT NULL,
   `title` varchar(55) NOT NULL,
   `score` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `events`
+-- Dumping data for table `events`
 --
 
 INSERT INTO `events` (`id`, `title`, `score`) VALUES
@@ -124,10 +124,10 @@ INSERT INTO `events` (`id`, `title`, `score`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `reviews`
+-- Table structure for table `reviews`
 --
 
-CREATE TABLE `reviews` (
+CREATE TABLE IF NOT EXISTS `reviews` (
   `id` int(11) NOT NULL,
   `athlete_id` int(11) NOT NULL,
   `name` varchar(35) NOT NULL,
@@ -136,7 +136,7 @@ CREATE TABLE `reviews` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `reviews`
+-- Dumping data for table `reviews`
 --
 
 INSERT INTO `reviews` (`id`, `athlete_id`, `name`, `email`, `text`) VALUES
@@ -145,10 +145,10 @@ INSERT INTO `reviews` (`id`, `athlete_id`, `name`, `email`, `text`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `sportchoices`
+-- Table structure for table `sportchoices`
 --
 
-CREATE TABLE `sportchoices` (
+CREATE TABLE IF NOT EXISTS `sportchoices` (
   `id` int(11) NOT NULL,
   `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
   `created` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -156,7 +156,7 @@ CREATE TABLE `sportchoices` (
 ) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Contenu de la table `sportchoices`
+-- Dumping data for table `sportchoices`
 --
 
 INSERT INTO `sportchoices` (`id`, `name`, `created`, `modified`) VALUES
@@ -199,16 +199,16 @@ INSERT INTO `sportchoices` (`id`, `name`, `created`, `modified`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `sports`
+-- Table structure for table `sports`
 --
 
-CREATE TABLE `sports` (
+CREATE TABLE IF NOT EXISTS `sports` (
   `id` int(11) NOT NULL,
   `sport` varchar(35) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `sports`
+-- Dumping data for table `sports`
 --
 
 INSERT INTO `sports` (`id`, `sport`) VALUES
@@ -219,17 +219,17 @@ INSERT INTO `sports` (`id`, `sport`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `subcategories`
+-- Table structure for table `subcategories`
 --
 
-CREATE TABLE `subcategories` (
+CREATE TABLE IF NOT EXISTS `subcategories` (
   `id` int(10) unsigned NOT NULL,
   `category_id` int(10) unsigned DEFAULT NULL,
   `name` varchar(60) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `subcategories`
+-- Dumping data for table `subcategories`
 --
 
 INSERT INTO `subcategories` (`id`, `category_id`, `name`) VALUES
@@ -246,134 +246,160 @@ INSERT INTO `subcategories` (`id`, `category_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Structure de la table `users`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
   `username` varchar(45) NOT NULL,
   `password` varchar(255) NOT NULL,
   `role` varchar(45) DEFAULT NULL,
-  `email` varchar(45) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+  `email` varchar(45) NOT NULL,
+  `active` tinyint(1) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8;
 
 --
--- Contenu de la table `users`
+-- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `role`, `email`) VALUES
-(6, 'user', '$2a$10$n7c8uvn3RleqvlPqw2H26.K/iVOWHOXjUbQnN34kEhymjtrTJU7Ey', 'user', 'MMalikMo@gmail.com'),
-(8, 'admin', '$2a$10$EscvhRQ0vqEww1dJTIiaZO8nor0sfEowNbuTMo4Dwysfa.7eGRohe', 'admin', 'Admin@gmail.com'),
-(9, 'Malik', '$2a$10$Pib3kkZQNoRjeNMiK9Nqk.kkPKNirMKnsGJ11/K/JajrgLrQsDJpm', 'user', 'MM@g.com'),
-(16, 'bruh', '$2a$10$veOBaLObkxwNS7YmZy7b7.Z5alkMTa9oY99fEPvTrUe6tdwwx.Oou', 'visitor', 'MMalikMo@gmail.com');
+INSERT INTO `users` (`id`, `username`, `password`, `role`, `email`, `active`) VALUES
+(6, 'user', '$2a$10$n7c8uvn3RleqvlPqw2H26.K/iVOWHOXjUbQnN34kEhymjtrTJU7Ey', 'user', 'MMalikMo@gmail.com', 1),
+(8, 'admin', '$2a$10$EscvhRQ0vqEww1dJTIiaZO8nor0sfEowNbuTMo4Dwysfa.7eGRohe', 'admin', 'Admin@gmail.com', 1),
+(9, 'Malik', '$2a$10$Pib3kkZQNoRjeNMiK9Nqk.kkPKNirMKnsGJ11/K/JajrgLrQsDJpm', 'user', 'MM@g.com', 0),
+(16, 'bruh', '$2a$10$veOBaLObkxwNS7YmZy7b7.Z5alkMTa9oY99fEPvTrUe6tdwwx.Oou', 'visitor', 'MMalikMo@gmail.com', 0),
+(17, 'lol', '$2a$10$vPaU1tYduikoPVNBmCSG7uHpph9xO63VhI2f0fhxvaUO21xS8ShVS', 'user', 'MMalikMo@gmail.com', 1),
+(18, 'lol', '$2a$10$XTv5CDxW7k/.jqAtAXXEJucsvgdZodA9jiZqfvQbXXbIuREtnUEQ6', 'user', 'MMalikMo@gmail.com', 0),
+(19, 'lol', '$2a$10$7YJ9LwG8CElo9lgBcu85duffI7cP/7xjQjfGX5FAQBIgipOaoftlC', 'user', 'MMalikMo@gmail.com', 0),
+(20, 'lol', '$2a$10$nEyzk4b3qg8h3kAt66ezuuBtMwsz9RSHqd8xGc1lgFexSuzVi7UmC', 'user', 'MMalikMo@gmail.com', 0),
+(21, 'lol', '$2a$10$zZy2JrMmBlgFQDFQHM8ehezRKz/kBA6wrW75aTBoEqjh5iS6I5IQq', 'user', 'MMalikMo@gmail.com', 0),
+(22, 'lol', '$2a$10$my84KLsZcWcBiY04BN0nZeAWS4RT7LF9OqplaIB67wShXOILIqGsi', 'user', 'MMalikMo@gmail.com', 0),
+(23, 'lol', '$2a$10$s.feSDh7mIyMRqnrQhncYu/sGrj3lezbhpcYgAcTxv2zAUj5vTMAm', 'user', 'MMalikMo@gmail.com', 1),
+(24, 'lol', '$2a$10$N9uzwvjNSs17pWu/NiQ/4eA.LKfmox0g8OApHJnXuvYnFkSomCffS', 'user', 'MMalikMo@gmail.com', 0),
+(25, 'lol', '$2a$10$/qlqXqJW9de1PZS3oBkt5.axbTijvSxusB3ovdnZgvmSlGlGVrdM2', 'user', 'MMalikMo@gmail.com', 0),
+(26, 'lol', '$2a$10$lTzDEPUmtZiHpAmdu66BuumuOZcsA.LlXbQWPxv5mgqgyRJdu3W2u', 'user', 'MMalikMo@gmail.com', 0),
+(27, 'lol', '$2a$10$kcOGXTbujjDbqR3LtemCL.9z/9c1Reu3J9TK2/e1GABG08qJabcR2', 'user', 'MMalikMo@gmail.com', 0),
+(28, 'lol', '$2a$10$KCVC7cxGbZ2STS1zYSX/meEfTN3Y3YUO8msxNcZhSeACgbwclEIvy', 'user', 'MMalikMo@gmail.com', 0),
+(29, 'lol', '$2a$10$k3YgyfWFI9O90dFqDF2sm.o4cdHS9JnrIEQvQxdHD.hLaneZgGX8.', 'user', 'MMalikMo@gmail.com', 0),
+(30, 'lol', '$2a$10$WVZEbFli9NRrYuGRcGr1deQJg2QaDQa.ShvUDqbRz9N25MXg/dedG', 'user', 'malik.mottawi@gmail.com', 0),
+(31, 'lol', '$2a$10$okKuisKFR6uBXhthU/p19e16YcN822p56uIfwvjSyzlq6KJqUxUT2', 'user', 'malik.mottawi@gmail.com', 0),
+(32, 'lol2', '$2a$10$C8FZJHJz75sKm3vQ8aaiJuTB1fEXdFhWGyvAHBRmWzl.eSVXqhvQG', 'user', 'malik.mottawi@gmail.com', 1),
+(33, 'lol3', '$2a$10$ygcD7IznI6Tj2HVJjq47dO/kvIE06pirTjm7ubGz0y3oCxqM2KQVK', 'user', 'malik.mottawi@gmail.com', 0),
+(34, 'lol4', '$2a$10$TKLmAuLINtM.d/S0pjWTxuiyMbnhWQyF.RkyIlAmfecs2aUNPkAwe', 'user', 'malik.mottawi@gmail.com', 0),
+(35, 'lol5', '$2a$10$f4O/NxU3Lr3DsFoLeR2s4u9KDtku6wl05.blwH3x8TlE/snU9Ko3W', 'user', 'malik.mottawi@gmail.com', 0),
+(36, 'lil', '$2a$10$0idtPtgRBB39Upi4HYuopeX0LfFd/uRHr5annpsjbEwQ6AMCvZbAy', 'user', 'malik.mottawi@gmail.com', 0),
+(39, 'lol6', '$2a$10$3O7UnRwJsnacJVyysL1iUe54LkemJZSf/XVSHSKG2gFnMg3/t7vYO', 'user', 'malik.mottawi@gmail.com', 0),
+(40, 'lk', '$2a$10$4VtJX.PuME1hJD0hmdcO2O7CAEsv4Z3QiZlhP.oSm51hoA2DBm5b2', 'admin', 'malik.mottawi@gmail.com', 1),
+(41, 'ma', '$2a$10$EiPMPD4NbYFQI52j/pDeuOfYJwyUipMpeVrRiQ5sdJZZ798R7avVm', 'visitor', 'malik.mottawi@gmail.com', 1),
+(42, 'exemple', '$2a$10$kiZ7X8KUx6Q.nfqPIoNu0O/.jfa1QO66hFnHL2WTrJXsItGHyhkkC', 'visitor', 'malik.mottawi@gmail.com', 0),
+(43, 'bruh', '$2a$10$O4fKVDU9XLlEAzKacJF07OWiC6tpGtk4caHGVHRjm.sRIHyVEcE7K', 'user', 'MMalikMo@gmail.com', 1);
 
 --
--- Index pour les tables exportées
+-- Indexes for dumped tables
 --
 
 --
--- Index pour la table `athletes`
+-- Indexes for table `athletes`
 --
 ALTER TABLE `athletes`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `athletes_events`
+-- Indexes for table `athletes_events`
 --
 ALTER TABLE `athletes_events`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `categories`
+-- Indexes for table `categories`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `events`
+-- Indexes for table `events`
 --
 ALTER TABLE `events`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `reviews`
+-- Indexes for table `reviews`
 --
 ALTER TABLE `reviews`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `sportchoices`
+-- Indexes for table `sportchoices`
 --
 ALTER TABLE `sportchoices`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `sports`
+-- Indexes for table `sports`
 --
 ALTER TABLE `sports`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `subcategories`
+-- Indexes for table `subcategories`
 --
 ALTER TABLE `subcategories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Index pour la table `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT pour les tables exportées
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT pour la table `athletes`
+-- AUTO_INCREMENT for table `athletes`
 --
 ALTER TABLE `athletes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
 --
--- AUTO_INCREMENT pour la table `athletes_events`
+-- AUTO_INCREMENT for table `athletes_events`
 --
 ALTER TABLE `athletes_events`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
--- AUTO_INCREMENT pour la table `categories`
+-- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
   MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT pour la table `events`
+-- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT pour la table `reviews`
+-- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT pour la table `sportchoices`
+-- AUTO_INCREMENT for table `sportchoices`
 --
 ALTER TABLE `sportchoices`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=36;
 --
--- AUTO_INCREMENT pour la table `sports`
+-- AUTO_INCREMENT for table `sports`
 --
 ALTER TABLE `sports`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT pour la table `subcategories`
+-- AUTO_INCREMENT for table `subcategories`
 --
 ALTER TABLE `subcategories`
   MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
--- AUTO_INCREMENT pour la table `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=44;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

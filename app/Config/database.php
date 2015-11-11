@@ -71,12 +71,12 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'root',
-		'password' => 'root',
-		'database' => 'olympic',
+		'host' => 'malikmottawi.com',
+		'login' => 'admin_db',
+		'password' => 'password',
+		'database' => 'admin_db',
 		'prefix' => '',
-		//'encoding' => 'utf8',
+		'encoding' => 'utf8',
 	);
 
 	public $test = array(
