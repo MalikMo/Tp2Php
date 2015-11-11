@@ -86,7 +86,7 @@
                             <th><?php echo $this->Paginator->sort('sport_id'); ?></th>
                             <?php endif ?>
                             <?php if ($this->Session->read('Auth.User.active')):?>
-                            <th><?php echo $this->Paginator->sort('subcategories_id'); ?></th><?php endif ?>
+                            <th><?php echo $this->Paginator->sort('Concentration'); ?></th><?php endif ?>
                             <?php if ($this->Session->read('Auth.User.active')):?>
                             <th class="actions"><?php echo __('Actions'); ?></th>
                             <?php endif ?>

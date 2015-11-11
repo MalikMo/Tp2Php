@@ -95,12 +95,12 @@
 			&nbsp;
 		</td>
 </tr><tr>
-    <td><strong><?php echo __('Categories'); ?></strong></td>
+    <td><strong><?php echo __('Niveau'); ?></strong></td>
 		<td>
 			<?php echo h($category['Category']['name']); ?>
 			&nbsp;
 		</td>
-</tr><tr>		<td><strong><?php echo __('SubCategories'); ?></strong></td>
+</tr><tr>		<td><strong><?php echo __('Concentration'); ?></strong></td>
 		<td>
 			<?php echo h($athlete['Subcategory']['name']); ?>
 			&nbsp;

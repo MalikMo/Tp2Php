@@ -27,7 +27,7 @@ class AthletesController extends AppController {
         $this->Athlete->recursive = 1;
         $this->set('athletes', $this->paginate());
         if(!$this->Session->read('Auth.User.active') && $this->Session->check('Auth.User')){
-          $this->Session->setFlash(__('This Account has not been activated. Vous avez pas access au information supplémentaires des athletes.'), 'flash/error');  
+          $this->Session->setFlash(__('Ce compte n\'a pas encore été activer. Vous avez pas access au information supplémentaires des athletes.'), 'flash/error');  
         }
     }
 
