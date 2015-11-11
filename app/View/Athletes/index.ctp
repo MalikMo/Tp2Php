@@ -3,7 +3,7 @@
 <div class="container">
   
     <div id="sidebar" class="col-sm-3">
-
+   
         <div class="actions">
 
             <ul class="list-group">
@@ -11,9 +11,9 @@
                 <div class="dropdown">
                     <a href="#" class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown"><?=__('Athlete Menu')?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        
+                        <?php if ($this->Session->read('Auth.User.active')):?>
                         <li class="list-group-item"><?php echo $this->Html->link(__('New Athlete'), array('action' => 'add'), array('class' => '')); ?></li>
-                        
+                        <?php endif ?>
                     </ul>
                 </div>
                 <?php endif ?>
@@ -76,11 +76,20 @@
                         <tr>
                             <th><?php echo $this->Paginator->sort('name'); ?></th>
                             <th><?php echo $this->Paginator->sort('events'); ?></th>
+                            <?php if ($this->Session->read('Auth.User.active')):?>
                             <th><?php echo $this->Paginator->sort('versus'); ?></th>
+                            <?php endif ?>
+                            <?php if ($this->Session->read('Auth.User.active')):?>
                             <th><?php echo $this->Paginator->sort('user_id'); ?></th>
+                            <?php endif ?>
+                            <?php if ($this->Session->read('Auth.User.active')):?>
                             <th><?php echo $this->Paginator->sort('sport_id'); ?></th>
+                            <?php endif ?>
+                            <?php if ($this->Session->read('Auth.User.active')):?>
+                            <th><?php echo $this->Paginator->sort('subcategories_id'); ?></th><?php endif ?>
+                            <?php if ($this->Session->read('Auth.User.active')):?>
                             <th class="actions"><?php echo __('Actions'); ?></th>
-                            
+                            <?php endif ?>
                         </tr>
                     </thead>
                     <tbody>
@@ -95,13 +104,25 @@
                     } 
                     ?>
                     &nbsp;</td>
+                                <?php if ($this->Session->read('Auth.User.active')):?>
                                 <td><?php echo h($athlete['Athlete']['versus']); ?>&nbsp;</td>
+                                <?php endif ?>
+                                <?php if ($this->Session->read('Auth.User.active')):?>
                                 <td>
                                     <?php echo $this->Html->link($athlete['User']['username'], array('controller' => 'users', 'action' => 'view', $athlete['User']['id'])); ?>
                                 </td>
+                                <?php endif ?>
+                                <?php if ($this->Session->read('Auth.User.active')):?>
                                 <td>
                                     <?php echo $this->Html->link($athlete['Sport']['sport'], array('controller' => 'sports', 'action' => 'view', $athlete['Sport']['sport'])); ?>
                                 </td>
+                                <?php endif ?>
+                                <?php if ($this->Session->read('Auth.User.active')):?>
+                                <td>
+                                    <?php echo h($athlete['Subcategory']['name']); ?>
+                                </td>
+                                <?php endif ?>
+                                <?php if ($this->Session->read('Auth.User.active')):?>
                                 <td class="actions">
                                     <?php echo $this->Html->link(__('View'), array('action' => 'view', $athlete['Athlete']['id']), array('class' => 'btn btn-info btn-xs')); ?>
                                     <?php if ($this->Session->read('Auth.User.role') == "admin" || $this->Session->read('Auth.User.role') == "user"  ): ?>
@@ -110,6 +131,7 @@
                                     <?php endif ?>
                                     
                                 </td>
+                                <?php endif ?>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

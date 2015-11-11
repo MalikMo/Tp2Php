@@ -10,7 +10,7 @@
  * @package       app.Config
  * @since         CakePHP(tm) v 0.2.9
  */
-
+ 
 /**
  * Here, we are connecting '/' (base path) to controller called 'Pages',
  * its action called 'display', and we pass a param to select the view file
@@ -42,3 +42,4 @@ Router::connect('/pages/*',
 	array('controller' => 'pages', 'action' => 'display'),
 	array('routeClass' => 'I18nRoute')
 );
+       Router::parseExtensions();

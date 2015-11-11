@@ -94,7 +94,18 @@
 			<?php echo $this->Html->link($athlete['Sport']['sport'], array('controller' => 'sports', 'action' => 'view', $athlete['Sport']['sport']), array('class' => '')); ?>
 			&nbsp;
 		</td>
-</tr>					</tbody>
+</tr><tr>
+    <td><strong><?php echo __('Categories'); ?></strong></td>
+		<td>
+			<?php echo h($category['Category']['name']); ?>
+			&nbsp;
+		</td>
+</tr><tr>		<td><strong><?php echo __('SubCategories'); ?></strong></td>
+		<td>
+			<?php echo h($athlete['Subcategory']['name']); ?>
+			&nbsp;
+		</td>
+</tr>						</tbody>
 				</table><!-- /.table table-striped table-bordered -->
 			</div><!-- /.table-responsive -->
 			
@@ -191,12 +202,16 @@
 					</div><!-- /.table-responsive -->
 					
 				<?php endif; ?>
+                              
 
 				<?php if ($this->Session->read('Auth.User.role') == "admin" || $this->Session->read('Auth.User.role') == "user"  ): ?>
 				<div class="actions">
 					<?php echo $this->Html->link('<i class="icon-plus icon-white"></i> '.__('New Event'), array('controller' => 'events', 'action' => 'add'), array('class' => 'btn btn-primary', 'escape' => false)); ?>			
-                                </div><!-- /.actions -->
+                                
 				<?php endif; ?>
+                                    <br><br>
+                                 <?php if ($athlete['Athlete']['athlete_image']) echo $this->Html->image($athlete['Athlete']['athlete_image'], array('escape' => false, 'height' => '250px'));?>
+                                </div><!-- /.actions --> 
 			</div><!-- /.related -->
 
 			

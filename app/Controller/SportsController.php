@@ -13,8 +13,8 @@ class SportsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator', 'Flash', 'Session');
-
+	public $components = array('Paginator', 'Flash', 'Session','RequestHandler');
+  
 /**
  * index method
  *

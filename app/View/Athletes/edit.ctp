@@ -1,9 +1,9 @@
 
 <div id="page-container" class="row">
 
-	<div id="sidebar" class="col-sm-3">
-		
-		 <div class="actions">
+    <div id="sidebar" class="col-sm-3">
+
+        <div class="actions">
 
 
 
@@ -54,51 +54,88 @@
 
         </div><!-- /.actions -->
 
-		
-	</div><!-- /#sidebar .col-sm-3 -->
-	
-	<div id="page-content" class="col-sm-9">
 
-		<h2><?php echo __('Edit Athlete'); ?></h2>
+    </div><!-- /#sidebar .col-sm-3 -->
 
-		<div class="athletes form">
-		
-			<?php echo $this->Form->create('Athlete', array('role' => 'form')); ?>
+    <div id="page-content" class="col-sm-9">
 
-				<fieldset>
+        <h2><?php echo __('Edit Athlete'); ?></h2>
 
-					<div class="form-group">
+        <div class="athletes form">
+
+			<?php echo $this->Form->create('Athlete', array('role' => 'form', 'type' => 'file')); ?>
+
+            <fieldset>
+
+                <div class="form-group">
 						<?php echo $this->Form->input('id', array('class' => 'form-control')); ?>
-					</div><!-- .form-group -->
-					<div class="form-group">
+                </div><!-- .form-group -->
+                <div class="form-group">
 						<?php echo $this->Form->input('name', array('class' => 'form-control')); ?>
-					</div><!-- .form-group -->
-					<div class="form-group">
+                </div><!-- .form-group -->
+                <div class="form-group">
 						<?php echo $this->Form->input('versus', array('class' => 'form-control')); ?>
-					</div><!-- .form-group -->
-					<div class="form-group">
+                </div><!-- .form-group -->
+                <div class="form-group">
 						<?php echo $this->Form->input('user_id', array('class' => 'form-control')); ?>
-					</div><!-- .form-group -->
-					<div class="form-group">
+                </div><!-- .form-group -->
+                <div class="form-group">
 						<?php echo $this->Form->input('sport_id', array('class' => 'form-control')); ?>
-					</div><!-- .form-group -->
-					<div class="form-group">
-							 <?php
+                </div><!-- .form-group -->
+                <div class="form-group">
+                    
+                    <?php echo $this->Form->input('category_id', array('class' => 'form-control')); ?>
+                </div><!-- .form-group --> 
+                <div class="form-group">
+                    <?php echo $this->Form->input('subcategory_id', array('class' => 'form-control')); ?>
+                </div><!-- .form-group -->  
+                
+                <div class="form-group">				 <?php
                     echo $this->Form->input('Event', array(
                         'type' => 'select',
                         'multiple' => 'checkbox'
                     ));
                     ?>
-					</div><!-- .form-group -->
+                </div><!-- .form-group -->
+                <div class="form-group">
+                    
+                   <?php 
+                   $athlete = $this->request->data;
+                   if ($athlete['Athlete']['athlete_image']){?>
+                          <strong><?php echo "Image";?></strong>
+                           <?php echo $this->Html->image($athlete['Athlete']['athlete_image'], array('escape' => false, 'height' => '250px'));
+                      }
+                       ?>    
+                </div><!-- .form-group -->
+                <div class="form-group">
+							<?php echo $this->Form->input('athlete_image', array('type'=>'file'));?>
+                </div><!-- .form-group -->
 
 					<?php echo $this->Form->submit('Submit', array('class' => 'btn btn-large btn-primary')); ?>
 
-				</fieldset>
+            </fieldset>
 
 			<?php echo $this->Form->end(); ?>
 
-		</div><!-- /.form -->
-			
-	</div><!-- /#page-content .col-sm-9 -->
+        </div><!-- /.form -->
+
+    </div><!-- /#page-content .col-sm-9 -->
 
 </div><!-- /#page-container .row-fluid -->
+
+<?php
+$this->Js->get('#AthleteCategoryId')->event('change', $this->Js->request(array(
+            'controller' => 'subcategories',
+            'action' => 'getByCategory'
+                ), array(
+            'update' => '#AthleteSubcategoryId',
+            'async' => true,
+            'method' => 'post',
+            'dataExpression' => true,
+            'data' => $this->Js->serializeForm(array(
+                'isForm' => true,
+                'inline' => true
+            ))
+        ))
+);
+?>

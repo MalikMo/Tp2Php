@@ -17,6 +17,7 @@
 <?php if ($this->Session->check('Auth.User')) {
                     echo $this->Html->link("Hello " . $this->Session->read('Auth.User.username'), array('controller' => 'users', 'action' => 'view', $this->Session->read('Auth.User.id')));
                     echo "</li><li>";
+
                     if ($this->Session->read('Auth.User.role') == "admin") {
                         echo $this->Html->link(__('add user'), array(
                             'controller' => 'users',
@@ -25,6 +26,10 @@
                     echo $this->Html->link(__('Logout'), array(
                         'controller' => 'users',
                         'action' => 'logout'));
+                    echo "</li><li>";
+                    if (!$this->Session->read('Auth.User.active')) {
+                     echo $this->Html->link(__('Resend mail'), array('controller' => 'users', 'action' => 'send_mail', $this->Session->read('Auth.User.email'), $this->Session->read('Auth.User.username'), $this->Session->read('Auth.User.id'))) ;  
+                    }echo "</li><li>";
                 } else {
                     echo $this->Html->link(__('Login'), array(
                         'controller' => 'users',
@@ -34,8 +39,14 @@
                         'controller' => 'users',
                         'action' => 'register')
                     );
-                     echo "</li>";
+                    
                 }
+                echo "</li><li>";
+                     echo $this->Html->link(__('About us'), array(
+                        'controller' => 'pages',
+                        'action' => 'display', 'index')
+                    );
+                     
 ?></li>
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=__('Language')?> <b class="caret"></b></a>

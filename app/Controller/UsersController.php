@@ -26,6 +26,9 @@ class UsersController extends AppController {
     public function index() {
         $this->User->recursive = 0;
         $this->set('users', $this->paginate());
+        if ($this->Session->read('Auth.User.active')){
+                        $this->Flash->error(__('Account is not activated'));
+                  }  
     }
 
     /**
@@ -53,6 +56,7 @@ class UsersController extends AppController {
     public function add() {
         if ($this->request->is('post')) {
             $this->User->create();
+            $this->User->saveField('active', 1);
             if ($this->User->save($this->request->data)) {
                 $this->Session->setFlash(__('The user has been saved'), 'flash/success');
                 $this->redirect(array('action' => 'index'));
@@ -62,11 +66,41 @@ class UsersController extends AppController {
         }
     }
 
+    public function send_mail($recipient = null, $username = null, $id = null, $redirect = true) {
+        $link = array('controller' => 'users', 'action' => 'activate', $id);
+        App::uses('CakeEmail', 'Network/Email');
+        $mail = new CakeEmail('gmail');
+        $mail->from('noreply@localhost.com')->to($recipient)->subject('Mail Confirm');
+        $mail->emailFormat('html')->template('activate')->viewVars(array('username' => $username, 'link' => $link));
+        $mail->send();
+        if ($redirect) {
+            $this->redirect('/');
+        }
+    }
+
+    public function activate($link) {
+        $link = explode('-', $link);
+        $user = $this->User->find('first', array('conditions' => array('id' => $link[0], 'active' => 0)));
+
+        if (!empty($user)) {
+            $this->User->id = $user['User']['id'];
+            $this->User->saveField('active', 1);
+            $this->User->saveField('role', 'user');
+            $this->Session->setFlash('Account Active', 'flash/success');
+            $this->redirect($this->Auth->logout());
+        } else {
+            $this->Session->setFlash('User Unrecognized', 'flash/error');
+            $this->redirect('/');
+        }
+    }
+
     public function register() {
         if ($this->request->is('post')) {
             $this->request->data['User']['role'] = 'visitor';
             $this->User->create();
             if ($this->User->save($this->request->data)) {
+                $data = $this->request->data;
+                $this->send_mail($data['User']['email'], $data['User']['username'], $this->User->getInsertID(), false);
                 $this->Session->setFlash(__('The user has been saved'), 'flash/success');
                 $this->redirect(array(
                     'controller' => 'athletes',
@@ -129,18 +163,22 @@ class UsersController extends AppController {
     public function beforeFilter() {
         parent::beforeFilter();
         // Allow users to register and logout.
-        $this->Auth->allow('logout', 'register');
+        $this->Auth->allow('logout', 'register', 'activate');
     }
 
     public function login() {
         if ($this->request->is('post')) {
-            if ($this->Auth->login()) {
-                $this->redirect(array(
-                    'controller' => 'athletes',
-                    'action' => 'index'
-                ));
-            }
-            $this->Flash->error(__('Invalid username or password, try again'));
+           
+                if ($this->Auth->login()) {
+                    
+                    $this->redirect(array(
+                        'controller' => 'athletes',
+                        'action' => 'index'
+                    ));
+                }
+                $this->Flash->error(__('Account is not activated or is unrecognized'));
+            
+            
         }
     }
 
@@ -151,11 +189,15 @@ class UsersController extends AppController {
     public function isAuthorized($user) {
         // All registered users can add posts
         // The owner of a post can edit and delete it
+
         if (in_array($this->action, array('view'))) {
             $athleteId = (int) $this->request->params['pass'][0];
             if ($this->Session->read('Auth.User.id') == $athleteId) {
                 return true;
             }
+        }
+        if ($this->action == 'send_mail' && isset($user['id']) && $this->request->params['pass'][2] === $user['id']) {
+            return true;
         }
 
         return parent::isAuthorized($user);
