@@ -64,7 +64,8 @@
 
 
         <div class="jumbotron">
-
+            <p style="text-align:center; "> <?php echo $this->Html->image("dessinAnimate.svg", array('controller' => 'pages',
+                'action' => 'display','escape' => false, 'height' => '600px'));?> </p>
             <h1>About the Olympic website!</h1> 
             <p>This page is my php class Project...</p>
             <p>Malik Mottawi</p>

@@ -1,0 +1,92 @@
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="SVG-Circus-066433be-c9f7-18bb-9460-a3bcfc84e382"
+   version="1.1"
+   viewBox="0 0 100 100"
+   preserveAspectRatio="xMidYMid meet"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%"
+   sodipodi:docname="olympic.svg">
+  <metadata
+     id="metadata3011">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3009" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1280"
+     inkscape:window-height="962"
+     id="namedview3007"
+     showgrid="false"
+     inkscape:zoom="7.75"
+     inkscape:cx="50"
+     inkscape:cy="50"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="SVG-Circus-066433be-c9f7-18bb-9460-a3bcfc84e382" />
+  <circle
+     id="actor_5"
+     cx="70"
+     cy="50"
+     r="7.5"
+     fill="rgba(242,162,12,0)"
+     stroke="rgba(207,25,39,1)" />
+  <circle
+     id="actor_4"
+     cx="60"
+     cy="55"
+     r="7.5"
+     fill="rgba(242,162,12,0)"
+     stroke="rgba(13,107,18,1)" />
+  <circle
+     id="actor_3"
+     cx="50"
+     cy="50"
+     r="7.5"
+     fill="rgba(242,162,12,0)"
+     stroke="rgba(3,0,1,1)" />
+  <circle
+     id="actor_2"
+     cx="40"
+     cy="55"
+     r="7.5"
+     fill="rgba(252,252,252,0)"
+     stroke="rgba(247,221,5,1)" />
+  <circle
+     id="actor_1"
+     cx="30"
+     cy="50"
+     r="7.5"
+     fill="rgba(250,250,250,0)"
+     stroke="rgba(3,78,166,1)" />
+	 <text x="7" y="75" fill="black">The Olympic
+	 </text>
+  <script
+     type="text/ecmascript"
+     id="script3005">(function(){var actors={};actors.actor_1={node:document.getElementById(&quot;SVG-Circus-066433be-c9f7-18bb-9460-a3bcfc84e382&quot;).getElementById(&quot;actor_1&quot;),type:&quot;circle&quot;,cx:30,cy:50,dx:15,dy:31,opacity:1};actors.actor_2={node:document.getElementById(&quot;SVG-Circus-066433be-c9f7-18bb-9460-a3bcfc84e382&quot;).getElementById(&quot;actor_2&quot;),type:&quot;circle&quot;,cx:40,cy:55,dx:15,dy:31,opacity:1};actors.actor_3={node:document.getElementById(&quot;SVG-Circus-066433be-c9f7-18bb-9460-a3bcfc84e382&quot;).getElementById(&quot;actor_3&quot;),type:&quot;circle&quot;,cx:50,cy:50,dx:15,dy:31,opacity:1};actors.actor_4={node:document.getElementById(&quot;SVG-Circus-066433be-c9f7-18bb-9460-a3bcfc84e382&quot;).getElementById(&quot;actor_4&quot;),type:&quot;circle&quot;,cx:60,cy:55,dx:15,dy:31,opacity:1};actors.actor_5={node:document.getElementById(&quot;SVG-Circus-066433be-c9f7-18bb-9460-a3bcfc84e382&quot;).getElementById(&quot;actor_5&quot;),type:&quot;circle&quot;,cx:70,cy:50,dx:15,dy:31,opacity:1};var tricks={};tricks.trick_2=(function(_,a){a=(function(n){return n})(a)%1,a=a*1%1,a=0&gt;a?1+a:a;var t,n;.25&gt;a?(t=2*a*30*Math.cos(180*Math.PI/180),n=2*-a*30*Math.sin(180*Math.PI/180)):.75&gt;a?(t=(.5-2*(a-.25))*30*Math.cos(180*Math.PI/180),n=-(.5-2*(a-.25))*30*Math.sin(180*Math.PI/180)):(t=(-.5+2*(a-.75))*30*Math.cos(180*Math.PI/180),n=-(-.5+2*(a-.75))*30*Math.sin(180*Math.PI/180)),_._tMatrix[4]+=t,_._tMatrix[5]+=n});tricks.trick_1=(function(_,t){t=(function(n){return n})(t)%1,t=0&gt;t?1+t:t;var i;i=0.1&gt;=t?1+(1.2-1)/0.1*t:t&gt;=0.9?1.2-(t-0.9)*((1.2-1)/(1-0.9)):1.2;var a=_._tMatrix,r=-_.cx*i+_.cx,x=-_.cy*i+_.cy,c=a[0]*i,n=a[1]*i,M=a[2]*i,f=a[3]*i,g=a[0]*r+a[2]*x+a[4],m=a[1]*r+a[3]*x+a[5];_._tMatrix[0]=c,_._tMatrix[1]=n,_._tMatrix[2]=M,_._tMatrix[3]=f,_._tMatrix[4]=g,_._tMatrix[5]=m});var scenarios={};scenarios.scenario_2={actors: [&quot;actor_1&quot;,&quot;actor_2&quot;,&quot;actor_3&quot;,&quot;actor_4&quot;,&quot;actor_5&quot;],tricks: [{trick: &quot;trick_2&quot;,start:0,end:1}],startAfter:0,duration:1000,actorDelay:0,repeat:0,repeatDelay:0};scenarios.scenario_1={actors: [&quot;actor_1&quot;,&quot;actor_2&quot;,&quot;actor_3&quot;,&quot;actor_4&quot;,&quot;actor_5&quot;],tricks: [{trick: &quot;trick_1&quot;,start:0,end:1}],startAfter:0,duration:1400,actorDelay:100,repeat:0,repeatDelay:0};var _reqAnimFrame=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||window.oRequestAnimationFrame,fnTick=function(t){var r,a,i,e,n,o,s,c,m,f,d,k,w;for(c in actors)actors[c]._tMatrix=[1,0,0,1,0,0];for(s in scenarios)for(o=scenarios[s],m=t-o.startAfter,r=0,a=o.actors.length;a&gt;r;r++){if(i=actors[o.actors[r]],i&amp;&amp;i.node&amp;&amp;i._tMatrix)for(f=0,m&gt;=0&amp;&amp;(d=o.duration+o.repeatDelay,o.repeat&gt;0&amp;&amp;m&gt;d*o.repeat&amp;&amp;(f=1),f+=m%d/o.duration),e=0,n=o.tricks.length;n&gt;e;e++)k=o.tricks[e],w=(f-k.start)*(1/(k.end-k.start)),tricks[k.trick]&amp;&amp;tricks[k.trick](i,Math.max(0,Math.min(1,w)));m-=o.actorDelay}for(c in actors)i=actors[c],i&amp;&amp;i.node&amp;&amp;i._tMatrix&amp;&amp;i.node.setAttribute(&quot;transform&quot;,&quot;matrix(&quot;+i._tMatrix.join()+&quot;)&quot;);_reqAnimFrame(fnTick)};_reqAnimFrame(fnTick);})()</script>
+</svg>

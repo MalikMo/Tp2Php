@@ -1,12 +1,15 @@
 <nav class="navbar navbar-default" role="navigation">
 	<div class="navbar-header">
+            
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button><!-- /.navbar-toggle -->
-		<?php echo $this->Html->Link(__('Olympic'),  array(
+               
+		<?php 
+                echo $this->Html->Link(__('Olympic'),  array(
                                              'controller' => 'athletes',
                                              'action' => 'index'
             ), array('class' => 'navbar-brand')); ?>
@@ -15,6 +18,7 @@
 		<ul class="nav navbar-nav">
 						<li class="active">
 <?php if ($this->Session->check('Auth.User')) {
+    
                     echo $this->Html->link("Hello " . $this->Session->read('Auth.User.username'), array('controller' => 'users', 'action' => 'view', $this->Session->read('Auth.User.id')));
                     echo "</li><li>";
 
@@ -46,6 +50,7 @@
                         'controller' => 'pages',
                         'action' => 'display', 'index')
                     );
+                 
                      
 ?></li>
 			<li class="dropdown">
@@ -55,8 +60,14 @@
                     'class' => 'languages',
                     'id' => 'language-switcher'
                 )); ?>
+                                            
 				</ul>
 			</li>
+                         <?php echo $this->Html->image("dessinAnimate.svg", array('controller' => 'pages',
+                        'action' => 'display','escape' => false, 'height' => '50px'));?>
+                        
+            </a>
+</a>
 		</ul><!-- /.nav navbar-nav -->
 	</div><!-- /.navbar-collapse -->
 </nav><!-- /.navbar navbar-default -->

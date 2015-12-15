@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="164mm"
+   viewBox="0 0 744.09447 581.10211"
+   id="svg3348"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="dessinAnimate.svg"
+   inkscape:export-filename="C:\UniServer\UniServerZ\www\athleteblogV.1.0.0\app\webroot\img\dessinAnimate.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs3350" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="305.87192"
+     inkscape:cy="78.505107"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="962"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata3353">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-471.26015)">
+    <path
+       style="fill:#0000ff;fill-rule:evenodd;stroke:#000000;stroke-width:1.07317781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 237.14314,606.82003 a 65.714287,75.683838 0 0 0 -65.71484,75.68223 65.714287,75.683838 0 0 0 65.71484,75.68448 65.714287,75.683838 0 0 0 65.71485,-75.68448 65.714287,75.683838 0 0 0 -65.71485,-75.68223 z m 0,9.87052 a 57.142857,65.812033 0 0 1 57.14258,65.81171 57.142857,65.812033 0 0 1 -57.14258,65.81395 57.142857,65.812033 0 0 1 -57.14258,-65.81395 57.142857,65.812033 0 0 1 57.14258,-65.81171 z"
+       id="bleu"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path3358" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#ffff00;fill-rule:evenodd;stroke:#000000;stroke-width:1.07317781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 300.00001,672.63195 a 65.714287,75.683838 0 0 0 -65.71485,75.68223 65.714287,75.683838 0 0 0 65.71485,75.68448 65.714287,75.683838 0 0 0 65.71484,-75.68448 65.714287,75.683838 0 0 0 -65.71484,-75.68223 z m 0,9.87051 a 57.142857,65.812033 0 0 1 57.14257,65.81172 57.142857,65.812033 0 0 1 -57.14257,65.81396 57.142857,65.812033 0 0 1 -57.14258,-65.81396 57.142857,65.812033 0 0 1 57.14258,-65.81172 z"
+       id="yellow"
+       inkscape:label="#path3358-0" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.07317781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 374.28571,606.81991 a 65.714287,75.683838 0 0 0 -65.71484,75.68224 65.714287,75.683838 0 0 0 65.71484,75.68447 65.714287,75.683838 0 0 0 65.71485,-75.68447 65.714287,75.683838 0 0 0 -65.71485,-75.68224 z m 0,9.87052 a 57.142857,65.812033 0 0 1 57.14258,65.81172 57.142857,65.812033 0 0 1 -57.14258,65.81395 57.142857,65.812033 0 0 1 -57.14258,-65.81395 57.142857,65.812033 0 0 1 57.14258,-65.81172 z"
+       id="black"
+       inkscape:label="#path3358-9" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#008000;fill-rule:evenodd;stroke:#000000;stroke-width:1.07317781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 440,672.63194 A 65.714287,75.683838 0 0 0 374.28516,748.31417 65.714287,75.683838 0 0 0 440,823.99863 65.714287,75.683838 0 0 0 505.71485,748.31417 65.714287,75.683838 0 0 0 440,672.63194 Z m 0,9.87052 A 57.142857,65.812033 0 0 1 497.14258,748.31417 57.142857,65.812033 0 0 1 440,814.12813 57.142857,65.812033 0 0 1 382.85742,748.31417 57.142857,65.812033 0 0 1 440,682.50246 Z"
+       id="green"
+       inkscape:label="#path3358-1" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#d40000;fill-rule:evenodd;stroke:#000000;stroke-width:1.07317781px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 508.57144,606.81991 a 65.714287,75.683838 0 0 0 -65.71485,75.68224 65.714287,75.683838 0 0 0 65.71485,75.6845 65.714287,75.683838 0 0 0 65.71484,-75.6845 65.714287,75.683838 0 0 0 -65.71484,-75.68224 z m 0,9.87052 a 57.142857,65.812033 0 0 1 57.14257,65.81172 57.142857,65.812033 0 0 1 -57.14257,65.81398 57.142857,65.812033 0 0 1 -57.14258,-65.81398 57.142857,65.812033 0 0 1 57.14258,-65.81172 z"
+       id="red"
+       inkscape:label="#path3358-00" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:96.58599854px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="67.456886"
+       y="865.93146"
+       id="text"
+       sodipodi:linespacing="125%"
+       inkscape:label="#text3400"
+       transform="scale(0.93181206,1.0731778)"><tspan
+         sodipodi:role="line"
+         id="tspan3402"
+         x="67.456886"
+         y="865.93146">THE OLYMPIC</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1.98523962px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -339.99999,0.93363324 1148.57141,0"
+       id="pathLinear"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path3404" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -71.428571,-1.9235096 928.571431,0"
+       id="pathLine"
+       inkscape:connector-curvature="0"
+       inkscape:label="#path3354" />
+  </g>
+  <animate
+     id="text"
+     attributeName="fill"
+     calcMode="linear"
+     from="#000000"
+     to="#0295da"
+     begin="0s;"
+     dur="5s"
+     xlink:href="#text"
+     repeatCount="indefinite" />
+  <animateMotion
+     xlink:href="#bleu"
+     repeatCount="indefinite"
+     dur="5s"
+     path="m -339.99999,0.93363324 1148.57141,0" />
+  <animateMotion
+     xlink:href="#yellow"
+     repeatCount="indefinite"
+     dur="5s"
+     path="m -339.99999,0.93363324 1148.57141,0" />
+  <animateMotion
+     xlink:href="#black"
+     repeatCount="indefinite"
+     dur="5s"
+     path="m -339.99999,0.93363324 1148.57141,0" />
+  <animateMotion
+     xlink:href="#green"
+     repeatCount="indefinite"
+     dur="5s"
+     path="m -339.99999,0.93363324 1148.57141,0" />
+  <animateMotion
+     xlink:href="#red"
+     repeatCount="indefinite"
+     dur="5s"
+     path="m -339.99999,0.93363324 1148.57141,0" />
+</svg>
