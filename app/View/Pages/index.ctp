@@ -12,6 +12,7 @@
                         <ul class="dropdown-menu">
                     <li class="list-group-item"><?php echo $this->Html->link(__('List Athletes'), array('controller' => 'athletes', 'action' => 'index'), array('class' => '')); ?></li>         
                
+                    
                         </ul>
                     </div>
                 <?php endif ?>
