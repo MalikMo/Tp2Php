@@ -83,3 +83,9 @@
 	</div><!-- /#page-content .col-sm-9 -->
 
 </div><!-- /#page-container .row-fluid -->
+<?php
+
+  
+
+  //load file for this view to work on 'autocomplete' field
+  $this->Html->script('View/Sportchoices/edit', array('inline' => false)); ?>

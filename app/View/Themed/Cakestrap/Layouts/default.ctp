@@ -38,6 +38,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
         
 	echo $this->Html->script('libs/jquery-1.10.2.min');
 	echo $this->Html->script('libs/bootstrap.min');
+        $this->Html->script('https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js', array('inline' => false));
 
         echo $this->fetch('script');
         ?>
