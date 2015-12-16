@@ -191,52 +191,7 @@ class AthleteTest extends CakeTestCase {
 		// Test save failed
 		$this->assertFalse($result);
         }
-        
-        public function testProcessImageUploadCorrectMock() {
-        // Create a stub for the Contact Model class
-        $stub = $this->getMockForModel('Athlete', array('is_uploaded_file', 'move_uploaded_file'));
-        // Always return TRUE for the 'is_uploaded_file' function
-        $stub->expects($this->any())
-                ->method('is_uploaded_file')
-                ->will($this->returnValue(TRUE));
-        // Copy the file instead of 'move_uploaded_file' to allow testing
-        $stub->expects($this->any())
-                ->method('move_uploaded_file')
-                ->will($this->returnCallback('copy'));
-        $data = array(
-            'Athlete' => array(
-                'name' => 'Simon',
-                'versus' => 'laval',
-                'user_id' => "6",
-                'athlete_image' => array(
-                    'name' => 'TestFile.jpg',
-                    'type' => 'image/jpeg',
-                    'tmp_name' => ROOT . DS . APP_DIR . DS . 'Test' . DS . 'Case' . DS . 'Model' . DS . 'TestFile.jpg',
-                    'error' => 0,
-                    'size' => '845941'
-                ),
-            )
-        );
-        
-        // Attempt to save
-	$result = $stub->save($data);
-        
-        
-	// Test successful insert
-	$this->assertArrayHasKey('Athlete', $result);
-	// Get the count in the DB
-	$result = $this->Harbor->find('count', array(
-		'conditions' => array(
-			'Athlete.versus' => 'laval',
-			'Athlete.name' => 'Simon',
-			'Athlete.athlete_image' => 'uploads/TestFile.jpg'
-		),
-	));
-	// Test DB entry
-	$this->assertEqual($result, 1);
-	// Test uploaded file exists
-	$this->assertFileExists(WWW_ROOT.'img'.DS.'uploads'.DS.'TestFile.jpg');
-    }
+     
             
 
 }

@@ -28,47 +28,47 @@ class SubcategoryFixture extends CakeTestFixture {
 		array(
 			'id' => '1',
 			'category_id' => '1',
-			'name' => 'fiction'
+			'name' => 'profit'
 		),
 		array(
 			'id' => '2',
 			'category_id' => '1',
-			'name' => 'biography'
+			'name' => 'semi-pro'
 		),
 		array(
 			'id' => '3',
 			'category_id' => '1',
-			'name' => 'children'
+			'name' => 'all-pro'
 		),
 		array(
 			'id' => '4',
 			'category_id' => '2',
-			'name' => 'classical'
+			'name' => 'agent-libre'
 		),
 		array(
 			'id' => '5',
 			'category_id' => '2',
-			'name' => 'rock'
+			'name' => 'fantasy'
 		),
 		array(
 			'id' => '6',
 			'category_id' => '2',
-			'name' => 'jazz'
+			'name' => 'enthousiaste'
 		),
 		array(
 			'id' => '7',
 			'category_id' => '3',
-			'name' => 'camera'
+			'name' => 'sante'
 		),
 		array(
 			'id' => '8',
 			'category_id' => '3',
-			'name' => 'audio'
+			'name' => 'loisir'
 		),
 		array(
 			'id' => '9',
 			'category_id' => '3',
-			'name' => 'tv'
+			'name' => 'education'
 		),
 	);
 

@@ -46,9 +46,9 @@ class SubcategoryTest extends CakeTestCase {
         $result = $this->Subcategory->getSubcategoriesByCategory(2);
 //            debug($result); die();
         $expected = array(
-            (int) 4 => 'classical',
-            (int) 5 => 'rock',
-            (int) 6 => 'jazz'
+            (int) 4 => 'agent-libre',
+            (int) 5 => 'fantasy',
+            (int) 6 => 'enthousiaste'
         );
         $this->assertEquals($expected, $result);
 //		$this->markTestIncomplete('testGetSubcategoriesByCategory not implemented.');
