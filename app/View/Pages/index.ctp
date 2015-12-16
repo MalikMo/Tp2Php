@@ -10,10 +10,8 @@
                     <div class="dropdown">
                         <a href="#" class="btn btn-danger dropdown-toggle" type="button" data-toggle="dropdown"><?= __('Athlete Menu') ?> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-
-                            <li class="list-group-item"><?php echo $this->Html->link(__('New Athlete'), array('action' => 'add'), array('class' => '')); ?></li>
-
-                        </ul>
+                    <li class="list-group-item"><?php echo $this->Html->link(__('List Athletes'), array('controller' => 'athletes', 'action' => 'index'), array('class' => '')); ?></li>         
+                </ul>
                     </div>
                 <?php endif ?>
                 <?php if ($this->Session->read('Auth.User.role') == "admin"): ?>
