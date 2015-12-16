@@ -211,7 +211,7 @@
 				<?php endif; ?>
                                     <br><br>
                                  <?php if ($athlete['Athlete']['athlete_image']) echo $this->Html->image($athlete['Athlete']['athlete_image'], array('escape' => false, 'height' => '250px'));?>
-                                <?php echo $this->Html->image("dessinAnimate.svg", array('escape' => false, 'height' => '250px'));?>
+                                
                                 </div><!-- /.actions --> 
 			</div><!-- /.related -->
 
