@@ -66,10 +66,52 @@
  * flags =>
  * A key/value array of driver specific connection options.
  */
+define('DEFAULT_DB', APP . DS . 'sqlite' . DS . 'default.sqlite');
+define('TEST_DB', APP . DS . 'sqlite' . DS . 'test.sqlite');
+
 class DATABASE_CONFIG {
 
-	public $default = array(
-		'datasource' => 'Database/Mysql',
+    public $default = array(
+        'datasource' => 'Database/Sqlite',
+        'persistent' => false,
+        'database' => DEFAULT_DB,
+        'prefix' => ''
+    );
+    public $test = array(
+        'datasource' => 'Database/Sqlite',
+        'persistent' => false,
+        'database' => TEST_DB,
+        'prefix' => ''
+    );
+    
+    
+    
+}
+//	public $default = array(
+//		'datasource' => 'Database/Mysql',
+//		'persistent' => false,
+//		'host' => 'localhost',
+//		'login' => 'root',
+//		'password' => 'root',
+//		'database' => 'olympic',
+//		'prefix' => '',
+//		'encoding' => 'utf8'
+//	);
+//
+//	public $test = array(
+//		'datasource' => 'Database/Mysql',
+//		'persistent' => false,
+//		'host' => 'localhost',
+//		'login' => 'root',
+//		'password' => 'root',
+//		'database' => 'olympicTest',
+//		'prefix' => '',
+//		//'encoding' => 'utf8',
+//	);
+//
+//}
+/*
+ * 'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'malikmottawi.com',
 		'login' => 'admin_db',
@@ -77,18 +119,5 @@ class DATABASE_CONFIG {
 		'database' => 'admin_db',
 		'prefix' => '',
 		'encoding' => 'utf8',
-	);
-
-	public $test = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => '',
-		'login' => '',
-		'password' => '',
-		'database' => '',
-		'prefix' => '',
-		//'encoding' => 'utf8',
-	);
-
-}
+ */
 

@@ -54,4 +54,11 @@ class Subcategory extends AppModel {
 		)
 	);
 
+        
+         public function getSubcategoriesByCategory($category_id = null){
+            return $this->find('list', array(
+            'conditions' => array('category_id' => $category_id),
+            'recursive' => -1
+        ));
+        }
 }

@@ -120,10 +120,10 @@
      calcMode="linear"
      from="#000000"
      to="#0295da"
-     begin="0s;"
+     begin="0s"
      dur="5s"
-     xlink:href="#text"
-     repeatCount="indefinite" />
+	 repeatCount="indefinite"
+     xlink:href="#text" />
   <animateMotion
      xlink:href="#bleu"
      repeatCount="indefinite"

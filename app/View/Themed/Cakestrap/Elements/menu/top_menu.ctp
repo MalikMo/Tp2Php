@@ -63,8 +63,11 @@
                                             
 				</ul>
 			</li>
-                         <?php echo $this->Html->image("dessinAnimate.svg", array('controller' => 'pages',
-                        'action' => 'display','escape' => false, 'height' => '50px'));?>
+                         <?php 
+echo $this->Html->link( 
+        $this->Html->image("dessinAnimate.svg", array('escape' =>false, 'height' => '50px'))
+        ,"http://" . $_SERVER['HTTP_HOST'] . $this->webroot . "pages/index",array('escapeTitle' => false,'title' => 'Page About'));
+?>
                         
             </a>
 </a>
