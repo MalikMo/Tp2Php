@@ -54,6 +54,13 @@ class SubcategoryTest extends CakeTestCase {
 //		$this->markTestIncomplete('testGetSubcategoriesByCategory not implemented.');
     }
     
+      public function testGetSubcategoriesByCategoryMauvaisNumero() {
+        $result = $this->Subcategory->getSubcategoriesByCategory(22);
+//            debug($result); die();
+        $this->assertEmpty($result);
+//		$this->markTestIncomplete('testGetSubcategoriesByCategory not implemented.');
+    }
+    
     public function testGetSubcategoriesByCategoryVide() {
         $result = $this->Subcategory->getSubcategoriesByCategory();
 //            debug($result); die();
